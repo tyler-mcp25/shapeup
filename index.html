@@ -11,13 +11,14 @@
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
 
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 	<title>Shape Up!</title>
 </head>
 
 <body>
 	<header>
-		<img src="images/shape_up_logo.png" alt="Shape Up Logo Image">
+		<a href="index.html"><img src="images/shape_up_logo.png" alt="Shape Up Logo Image" title="Click here to return to the home page"></a>
 
 		<div>
 			<h2>Shape Up!</h2>
@@ -25,8 +26,32 @@
 		</div>
 	</header>
 
+	<!-- Navigation Bar -->
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="cardio/index.html">Cardio</a></li>
+			<li><a href="diet/index.html">Diet</a>
+				<ul>
+					<li><a href="diet/bmi.html">BMI</a></li>
+					<li><a href="diet/calories.html">Calories</a></li>
+					<li><a href="diet/meals.html">Meals</a></li>
+				</ul>
+			</li>
+			<li><a href="strength/index.html">Strength</a></li>
+			<li><a href="stress/index.html">Stress</a>
+				<ul>
+					<li><a href="stress/meditate.html">Meditate</a></li>
+					<li><a href="stress/tips.html">Tips</a></li>
+					<li><a href="stress/vipassana.html">Vipassana</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
 	<main>
 		<aside>
+			<nav id="nav_list">
 			<h2>Additional Resources</h2>
 			<ul>
 				<li><a href="https://paahjournal.com/" target="_blank">Physical activity and health</a></li>
@@ -38,6 +63,7 @@
 						target="_blank">Cardiovascular training</a></li>
 				<li><a href="https://www.self.com/gallery/power-yoga-workout" target="_blank">Yoga workout</a></li>
 			</ul>
+			</nav>
 		</aside>
 		<section>
 			<h1>Get Ready To Shape Up!</h1>
