@@ -89,12 +89,12 @@ aside a:visited {
     width: 100%;
 }
 
-#nav_menu ul ul li a{
+#nav_menu ul ul li a {
     text-align: left;
     padding-left: .25em;
 }
 
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover>ul {
     display: block;
 }
 
@@ -199,7 +199,8 @@ blockquote {
     border-radius: 0 8px 8px 0;
 }
 
-section h2, section h4{
+section h2,
+section h4 {
     margin: 0 0 20px;
 }
 
@@ -225,7 +226,8 @@ section h4 a {
     font-size: 130%;
 }
 
-section h4 a:link, section h4 a:visited {
+section h4 a:link,
+section h4 a:visited {
     color: black;
     transition: color ease-in-out 600ms;
 }
@@ -264,4 +266,77 @@ footer {
 footer p {
     padding: 20px 0;
     font-variant: small-caps;
+}
+
+/* Hide Mobile Menu */
+#mobilemenu {
+    display: none;
+}
+
+/*************************************
+************Media Queries*************
+*************************************/
+
+@media only screen and (max-width: 933px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    #left {
+        order: 2;
+        flex: 0 1 90%;
+    }
+
+    #section {
+        flex: 0 1 70%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+
+    #mobilemenu a {
+        color: white;
+    }
+
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        max-width: 95%;
+    }
+
+    #right {
+        order: 3;
+    }
+
+    main aside h2 {
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    header {
+        flex-direction: column;
+    }
 }

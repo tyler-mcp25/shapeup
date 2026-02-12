@@ -8,7 +8,20 @@
 	<meta name="keywords" content="shape up, work out, diet, cardio, strength, stress">
 	<meta name="author" content="Tyler McPherson">
 
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Slicknac JS file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
 	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
 	<link rel="stylesheet" href="styles/main.css">
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -18,7 +31,8 @@
 
 <body>
 	<header>
-		<a href="index.html"><img src="images/shape_up_logo.png" alt="Shape Up Logo Image" title="Click here to return to the home page"></a>
+		<a href="index.html"><img src="images/shape_up_logo.png" alt="Shape Up Logo Image"
+				title="Click here to return to the home page"></a>
 
 		<div>
 			<h2>Shape Up!</h2>
@@ -27,6 +41,8 @@
 	</header>
 
 	<!-- Navigation Bar -->
+	<nav id="mobilemenu"></nav>
+
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -50,19 +66,19 @@
 	</nav>
 
 	<main>
-		<aside>
+		<aside id="left">
 			<nav id="nav_list">
-			<h2>Additional Resources</h2>
-			<ul>
-				<li><a href="https://paahjournal.com/" target="_blank">Physical activity & health</a></li>
-				<li><a href="https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.stretching-exercises.bz1000"
-						target="_blank">Stretching exercises</a></li>
-				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670"
-						target="_blank">Strength training</a></li>
-				<li><a href="https://my.clevelandclinic.org/health/articles/24754-cardiovascular-endurance"
-						target="_blank">Cardiovascular training</a></li>
-				<li><a href="https://www.self.com/gallery/power-yoga-workout" target="_blank">Yoga workout</a></li>
-			</ul>
+				<h2>Additional Resources</h2>
+				<ul>
+					<li><a href="https://paahjournal.com/" target="_blank">Physical activity & health</a></li>
+					<li><a href="https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.stretching-exercises.bz1000"
+							target="_blank">Stretching exercises</a></li>
+					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670"
+							target="_blank">Strength training</a></li>
+					<li><a href="https://my.clevelandclinic.org/health/articles/24754-cardiovascular-endurance"
+							target="_blank">Cardiovascular training</a></li>
+					<li><a href="https://www.self.com/gallery/power-yoga-workout" target="_blank">Yoga workout</a></li>
+				</ul>
 			</nav>
 			<div class="sidebarimages">
 				<img src="images/break.jpg" alt="break">
@@ -81,7 +97,8 @@
 				affects every aspect of your life.</blockquote>
 
 			<h2>What We Offer:</h2>
-			<h4><img src="images/weightlifting.png" alt="weightlifting"><a href="strength/index.html">Build strong muscles</a></h4>
+			<h4><img src="images/weightlifting.png" alt="weightlifting"><a href="strength/index.html">Build strong
+					muscles</a></h4>
 			<p>Tired of being tired? Strength training can help you manage or lose weight and increase your metabolism
 				to help you burn more calories. It can also increase bone density and reduce the risk of osteoporosis.
 			</p>
@@ -94,20 +111,26 @@
 			<p>Stressed out? Stress can weaken the immune system and cause high blood pressure, fatigue, depression,
 				anxiety, and even heart disease. Learn ways to manage and reduce stress.</p>
 
-			<h4><img src="images/vegetables.png" alt="vegetables"><a href="diet/index.html">Eat what's right for you</a></h4>
+			<h4><img src="images/vegetables.png" alt="vegetables"><a href="diet/index.html">Eat what's right for you</a>
+			</h4>
 			<p>Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy diet is
 				probably the most important thing you can do to promote overall health.</p>
 		</section>
 		<aside id="right">
 			<h2>How to prepare to Shape Up!</h2>
 			<h3>Get a check up</h3>
-			<p>If you have any health issues or take any medications, be sure to consult with your healthcare provider before beginning a new exercise or diet regimen.</p>
+			<p>If you have any health issues or take any medications, be sure to consult with your healthcare provider
+				before beginning a new exercise or diet regimen.</p>
 			<h3>Dress for Success</h3>
-			<p>Workout clothes should be comfy. While exercising, you should be thinking about what you're doing, not what you're wearing. That includes good shoes, which are essential for running, jogging, or walking, and socks that absorb shock and sweat.</p>
+			<p>Workout clothes should be comfy. While exercising, you should be thinking about what you're doing, not
+				what you're wearing. That includes good shoes, which are essential for running, jogging, or walking, and
+				socks that absorb shock and sweat.</p>
 			<h3>Equipment?</h3>
-			<p>You don't need to buy a lot of fancy equipment to get in shape. But you might want to invest in a yoga mat, a large exercise ball, or some weights, depending on your Shape Up! plan.</p>
+			<p>You don't need to buy a lot of fancy equipment to get in shape. But you might want to invest in a yoga
+				mat, a large exercise ball, or some weights, depending on your Shape Up! plan.</p>
 			<h3>Resist Temptation</h3>
-			<p>It's hard to eat right when everyone else is buying lunch at a fast food restaurant. Invest in some good food containers and bring your healthy lunch and snacks. Your body and your wallet will thank you.</p>
+			<p>It's hard to eat right when everyone else is buying lunch at a fast food restaurant. Invest in some good
+				food containers and bring your healthy lunch and snacks. Your body and your wallet will thank you.</p>
 		</aside>
 
 	</main>
